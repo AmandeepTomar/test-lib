@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show simple toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="showSimple"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/showSuccess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Success toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:onClick="showSuccess"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/showSuccessWithImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Success With Image toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showSuccess"
+        android:onClick="showSuccessImage"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/showError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Error toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showSuccessWithImage"
+        android:onClick="showError"/>
+    <Button
+        android:layout_margin="10dp"
+        android:id="@+id/showErrorWithImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Error with image toast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showError"
+        android:onClick="showErrorImage"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
